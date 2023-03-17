@@ -6,15 +6,19 @@ body{
 :root {
  --primary-navbar-bg-color: red;
  --secondary-navbar-bg-color: white;
- --search-icon-bg-color: #0545d6;
+ --tertiary-navbar-bg-color: rgb(181 0 0);
+
+ --search-icon-bg-color: #04043f;
  --study-uk-text-color: white;
  --lower-navbar-menu-text-color: black;
  --lower-navbar-menu-options-bg-color: #04043f;
  --lower-navbar-menu-options-text-color: white;
+ --hamburger-color: white;
 
  --dark-blue-color: #04043f;
  --light-blue-color: #0545d6;
  --white: white;
  --black: black;
  --red: red;
+ --gray: rgb(219, 219, 219);
 }

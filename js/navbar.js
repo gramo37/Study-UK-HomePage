@@ -1,12 +1,29 @@
+function toggleHamburger(x) {
+    let lowerNavbarMenuContainer = document.querySelector(".lower-navbar-menu-container");
+    lowerNavbarMenuContainer.classList.toggle("show-in-big-screen")
+    x.classList.toggle("toggle-hamburger");
+  }
+
+function toggleLanguage() {
+    let languageDropdown = document.querySelector(".language-list")
+    let dropdownImage = document.getElementById("language-dropdown-image")
+
+    languageDropdown.classList.toggle("show-language-list")
+    languageDropdown.classList.toggle("hide-language-list")
+
+    if(languageDropdown.classList.contains("show-language-list")) dropdownImage.src = "assets/dropup.png"
+    else dropdownImage.src = "assets/dropdown.png"
+}
+
 function chsize(item, size) {
     item.style.scale = size;
 }
 
-var lowerNavbarMenu = document.querySelectorAll(".lower-navbar-menu")
+let lowerNavbarMenu = document.querySelectorAll(".lower-navbar-menu")
 
 lowerNavbarMenu.forEach((listItem) => {
 
-    var underLine = document.createElement("div")
+    let underLine = document.createElement("div")
     underLine.classList.add("lower-navbar-menu-underline")
     listItem.appendChild(underLine)
 
@@ -21,18 +38,18 @@ lowerNavbarMenu.forEach((listItem) => {
     })
 })
 
-var lowerNavbarMenuOptions = document.querySelectorAll(".lower-navbar-menu-options")
+let lowerNavbarMenuOptions = document.querySelectorAll(".lower-navbar-menu-options")
 
 lowerNavbarMenuOptions.forEach((item) => {
-    var diamond = document.createElement("div")
+    let diamond = document.createElement("div")
     diamond.classList.add("diamondIcon")
     item.prepend(diamond)
 })
 
-var lowerNavbarMenuOptionsList = document.querySelectorAll(".lower-navbar-menu-options li")
+let lowerNavbarMenuOptionsList = document.querySelectorAll(".lower-navbar-menu-options li")
 
 lowerNavbarMenuOptionsList.forEach((listItem) => {
-    var underLine = document.createElement("div")
+    let underLine = document.createElement("div")
     underLine.classList.add("lower-navbar-menu-option-underline")
     listItem.appendChild(underLine)
 
