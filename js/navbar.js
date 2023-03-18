@@ -6,7 +6,6 @@ function toggleHamburger(x) {
 }
 
 function openOptions(e) {
-    console.log(e.parentNode.children[1])
     e.parentNode.children[1].classList.add("show-options")
 }
 
