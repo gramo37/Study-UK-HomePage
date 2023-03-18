@@ -19,21 +19,24 @@
   color: var(--white);
   background-color: var(--primary-navbar-bg-color);
   width: fit-content;
-  border: 2px solid white;
+  /* border: 2px solid white; */
 }
 
 #navbar-logo div {
   display: flex;
+  justify-content: center;
   margin: 0px 20px;
   box-sizing: border-box;
   height: 40px;
   width: fit-content;
   margin: 10px;
-  border: 2px solid white;
+  /* border: 2px solid white; */
+  min-width: 80px;
 }
 
 #navbar-logo div img {
   box-sizing: border-box;
+
 }
 
 #navbar-logo span {
