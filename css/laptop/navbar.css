@@ -28,10 +28,9 @@
   margin: 0px 20px;
   box-sizing: border-box;
   height: 40px;
-  width: fit-content;
   margin: 10px;
   /* border: 2px solid white; */
-  min-width: 80px;
+  width: 80px;
 }
 
 #navbar-logo div img {
