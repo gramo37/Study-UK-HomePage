@@ -9,10 +9,7 @@
     <link rel="stylesheet" href="css/index.css" />
 
     <!-- CSS for Big Screens -->
-    <link
-      rel="stylesheet"
-      href="css/laptop/navbar.css"
-    />
+    <link rel="stylesheet" href="css/laptop/navbar.css" />
     <link rel="stylesheet" href="css/laptop/dashboard.css" />
 
     <!-- CSS for Small Screens -->
@@ -23,6 +20,7 @@
     />
   </head>
   <body>
+    <!-- Navbar -->
     <nav id="navbar">
       <div id="upper-navbar">
         <div id="navbar-logo" class="show-in-big-screen">
@@ -51,7 +49,7 @@
             </div>
             <div class="search-icon-container">
               <input placeholder="Search" />
-              <div class="search-icon">
+              <div class="search-icon" onclick="expandSearchIcon(this)">
                 <img src="assets/searchicon.png" width="20px" height="20px" />
               </div>
             </div>
@@ -71,61 +69,88 @@
             <div class="hamburger-bar3"></div>
           </div>
         </div>
-        <!-- <ul class="lower-navbar-menu-container"> -->
-        <ul class="lower-navbar-menu-container show-in-big-screen">
+        <ul class="lower-navbar-menu-container slide-left">
           <li class="lower-navbar-menu">
             <span>Home</span>
-            <ul class="lower-navbar-menu-options">
-              <li>Why study in the UK?</li>
-              <li>Plan your studies</li>
-              <li>Scholarships and funding</li>
-              <li>Moving to the UK</li>
-            </ul>
           </li>
           <li class="lower-navbar-menu">
-            <span>Courses</span>
-            <ul class="lower-navbar-menu-options">
-              <li>Why study in the UK?</li>
-              <li>Plan your studies</li>
-              <li>Scholarships and funding</li>
-              <li>Moving to the UK</li>
-            </ul>
+            <span onclick="openOptions(this)">Why study in the UK? <span class="show-in-small-screen">></span></span>
+            <div class="lower-navbar-menu-options">
+              <div class="lower-navbar-back-options show-in-small-screen">
+                <span onclick="closeOptions(this)">< Back</span>
+                <span>Why study in the UK?</span>
+              </div>
+              <ul class="lower-navbar-menu-options-container">
+                <li>Student life</li>
+                <li>Succeed in your career</li>
+                <li>About the UK</li>
+                <li>World famous universities</li>
+                <li>Access world-leading research</li>
+                <li>Short, flexible courses</li>
+              </ul>
+            </div>
           </li>
           <li class="lower-navbar-menu">
-            <span>Institutions</span>
-            <ul class="lower-navbar-menu-options">
-              <li>Why study in the UK?</li>
-              <li>Plan your studies</li>
-              <li>Scholarships and funding</li>
-              <li>Moving to the UK</li>
-            </ul>
+            <span onclick="openOptions(this)">Plan your studies <span class="show-in-small-screen">></span></span>
+            <div class="lower-navbar-menu-options">
+              <div class="lower-navbar-back-options show-in-small-screen">
+                <span onclick="closeOptions(this)">< Back</span>
+                <span>Plan your studies</span>
+              </div>
+              <ul class="lower-navbar-menu-options-container">
+                <li>Ways of learning</li>
+                <li>Choosing a university or college</li>
+                <li>Choosing a course</li>
+                <li>How to apply</li>
+                <li>What subjects can I study?</li>
+                <li>Events</li>
+              </ul>
+            </div>
           </li>
           <li class="lower-navbar-menu">
-            <span>Scholarships</span>
-            <ul class="lower-navbar-menu-options">
-              <li>Why study in the UK?</li>
-              <li>Plan your studies</li>
-              <li>Scholarships and funding</li>
-              <li>Moving to the UK</li>
-            </ul>
+            <span onclick="openOptions(this)">Scholarships and funding <span class="show-in-small-screen">></span></span>
+            <div class="lower-navbar-menu-options">
+              <div class="lower-navbar-back-options show-in-small-screen">
+                <span onclick="closeOptions(this)">< Back</span>
+                <span>Scholarships and funding</span>
+              </div>
+              <ul class="lower-navbar-menu-options-container">
+                <li>Great Scholarships</li>
+                <li>Commonwealth Scholarships</li>
+                <li>Chevening Scholarships</li>
+              </ul>
+            </div>
           </li>
           <li class="lower-navbar-menu">
-            <span>University</span>
-            <ul class="lower-navbar-menu-options">
-              <li>Why study in the UK?</li>
-              <li>Plan your studies</li>
-              <li>Scholarships and funding</li>
-              <li>Moving to the UK</li>
-            </ul>
+            <span onclick="openOptions(this)">Moving to the UK <span class="show-in-small-screen">></span></span>
+            <div class="lower-navbar-menu-options">
+              <div class="lower-navbar-back-options show-in-small-screen">
+                <span onclick="closeOptions(this)">< Back</span>
+                <span>Courses</span>
+              </div>
+              <ul class="lower-navbar-menu-options-container">
+                <li><a href="#">Cost of studying in the UK</a></li>
+                <li>Student visas</li>
+                <li>Finding somewhere to live</li>
+                <li>Support while you study</li>
+                <li>EU student advice</li>
+                <li>Covid-19: information for international students</li>
+              </ul>
+            </div>
           </li>
           <li class="lower-navbar-menu">
-            <span>Subject</span>
-            <ul class="lower-navbar-menu-options">
-              <li>Why study in the UK?</li>
-              <li>Plan your studies</li>
-              <li>Scholarships and funding</li>
-              <li>Moving to the UK</li>
-            </ul>
+            <span onclick="openOptions(this)">After your studies <span class="show-in-small-screen">></span></span>
+            <div class="lower-navbar-menu-options">
+              <div class="lower-navbar-back-options show-in-small-screen">
+                <span onclick="closeOptions(this)">< Back</span>
+                <span>Courses</span>
+              </div>
+              <ul class="lower-navbar-menu-options-container">
+                <li>Stay in the UK after you graduate</li>
+                <li>Alumini Awards</li>
+                <li>Preparing for work</li>
+              </ul>
+            </div>
           </li>
           <li class="lower-navbar-menu">
             <span>Contact Us</span>
@@ -134,6 +159,7 @@
       </div>
     </nav>
 
+    <!-- Dashboard -->
     <header>
       <video class="dashboard-video-container">
         <source src="/assets/dashboardVideo.mp4" type="video/mp4" />

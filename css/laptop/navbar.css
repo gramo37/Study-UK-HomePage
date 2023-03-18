@@ -1,5 +1,4 @@
 /* Classes only shown in Laptop */
-
 .show-in-small-screen {
   display: none !important;
 }
@@ -177,7 +176,7 @@
   background-color: var(--lower-navbar-menu-options-bg-color);
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
   padding: 10px;
   position: absolute;
@@ -190,7 +189,14 @@
   z-index: 20;
 }
 
-.lower-navbar-menu-options li {
+.lower-navbar-menu-options-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  align-items: flex-start;
+}
+
+.lower-navbar-menu-options-container li {
   color: var(--lower-navbar-menu-options-text-color);
   line-break: loose;
   white-space: nowrap;
@@ -219,6 +225,13 @@
   width: 20px !important;
   height: 20px !important;
   scale: 1 !important;
-  transform: translate(88px, -20px) rotate(45deg);
+  /* transform: translate(5vw, -20px) rotate(45deg); */
+  transform: translate(0px, -20px) rotate(45deg);
   background-color: var(--lower-navbar-menu-options-bg-color) !important;
+}
+
+@media only screen and (max-width: 1175px) {
+  .lower-navbar-menu-options {
+    top: 70px;
+  }
 }
