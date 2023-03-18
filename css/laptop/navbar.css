@@ -19,6 +19,7 @@
   color: var(--white);
   background-color: var(--primary-navbar-bg-color);
   width: fit-content;
+  border: 2px solid white;
 }
 
 #navbar-logo div {
@@ -28,6 +29,7 @@
   height: 40px;
   width: fit-content;
   margin: 10px;
+  border: 2px solid white;
 }
 
 #navbar-logo div img {
