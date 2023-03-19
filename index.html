@@ -160,13 +160,16 @@
     </nav>
 
     <!-- Dashboard -->
-    <header>
-      <video class="dashboard-video-container">
+    <header id="dashboard-video-container">
+      <video id="dashboard-video" playsinline muted>
         <source src="/assets/dashboardVideo.mp4" type="video/mp4" />
         Error Message
       </video>
+      <div id="dashboard-video-play-btn"><button onclick="toogleVideo(this)"><img width="20px" height="20px" src="/assets/dropdown.png"></button></div>
+      <div id="dashboard-video-title"><h1>STUDY IN UK</h1></div>
     </header>
 
     <script src="js/navbar.js"></script>
+    <script src="js/dashboard.js"></script>
   </body>
 </html>

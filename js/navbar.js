@@ -32,6 +32,8 @@ function chsize(item, size) {
     item.style.scale = size;
 }
 
+
+// Add underline when hovered to all the lower navbar menu items
 let lowerNavbarMenu = document.querySelectorAll(".lower-navbar-menu")
 
 lowerNavbarMenu.forEach((listItem) => {
@@ -50,6 +52,7 @@ lowerNavbarMenu.forEach((listItem) => {
     })
 })
 
+// Create a up arrow for dropdown for the lower navbar in the laptop version
 let lowerNavbarMenuOptions = document.querySelectorAll(".lower-navbar-menu-options")
 
 lowerNavbarMenuOptions.forEach((item) => {
@@ -58,6 +61,7 @@ lowerNavbarMenuOptions.forEach((item) => {
     item.prepend(diamond)
 })
 
+// Add underline for the options present in the lower navbar menu items
 let lowerNavbarMenuOptionsList = document.querySelectorAll(".lower-navbar-menu-options-container li")
 
 lowerNavbarMenuOptionsList.forEach((listItem) => {
