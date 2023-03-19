@@ -57,6 +57,8 @@
 }
 
 .upper-navbar-right-menu h1 {
+  line-break: loose;
+  white-space: nowrap;
   color: var(--study-uk-text-color);
 }
 
@@ -68,6 +70,10 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+
+.search-icon-container input {
+  font-size: 1rem;
 }
 
 .language-dropdown-container {
@@ -114,6 +120,7 @@
 
 .search-icon-container {
   padding: 0px 0px 0px 7px !important;
+  transition: 0.5s all;
 }
 
 .search-icon-container input {

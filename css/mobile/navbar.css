@@ -30,7 +30,7 @@
 }
 
 .upper-navbar-right-menu h1 {
-  margin-left: 10px;
+  margin-left: 30px;
 }
 
 .language-dropdown-container, .search-icon {
@@ -46,10 +46,18 @@
 }
 
 .search-icon-container input {
-  display: none;
+  position: absolute;
+  right: 41px;
+  height: 24px;
+  border-radius: 5px 0px 0px 5px;
+  width: 0vw;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.7s all;
 }
 
 .search-icon-container {
+  position: relative;
   padding: 0px 0px 0px 0px !important;
 }
 
@@ -149,7 +157,9 @@
 }
 
 .expand-search-icon {
-  display: block !important;
+  width: calc(95vw - 41px) !important;
+  opacity: 1 !important;
+  pointer-events: all !important;
 }
 
 /* Hamburger Icon */
@@ -184,15 +194,26 @@
   transform: translate(0, -10px) rotate(45deg);
 }
 
+@media only screen and (max-width: 650px){
+  .expand-search-icon {
+    width: calc(91vw - 41px) !important;
+  }
+}
+
 @media only screen and (max-width: 300px){
   .upper-navbar-right-menu h1 {
-    margin: 10px 5px;
+    margin: 15px 5px;
     margin-right: 0px;
     font-size: 1.3rem;
     transform: translate(5px, 0px);
   }
 
   .lower-navbar-menu-container {
-    top: 119px;
+    top: 129px;
   }
+
+  .expand-search-icon {
+    width: calc(90vw - 41px) !important;
+  }
+
 }
