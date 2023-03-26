@@ -13,6 +13,13 @@
     right: 30px;
 }
 
+#dashboard-video-play-btn button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
 #dashboard-video-title {
     padding: 8px;
     background-color: var(--dark-blue-color);

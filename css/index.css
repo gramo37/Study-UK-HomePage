@@ -8,6 +8,15 @@ a {
     color: inherit;
 }
 
+.footer {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.footer a {
+    color: white;
+}
+
 :root {
  --primary-navbar-bg-color: red;
  --secondary-navbar-bg-color: white;
