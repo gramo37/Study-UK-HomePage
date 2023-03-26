@@ -9,8 +9,9 @@ a {
 }
 
 .footer {
-    background-color: var(--black);
+    background-color: var(--dark-blue-color);
     color: var(--white);
+    padding: 10px;
 }
 
 .footer a {

@@ -92,7 +92,7 @@
   padding: 0px;
   border-radius: 5px;
   z-index: 20;
-  top: 26px;
+  top: 46px;
 }
 
 .show-language-list {
@@ -193,7 +193,7 @@
   flex-direction: column;
   padding: 10px;
   position: absolute;
-  top: 49px;
+  top: 53px;
   cursor: pointer;
   opacity: 0;
   pointer-events: none;
@@ -245,6 +245,6 @@
 
 @media only screen and (max-width: 1175px) {
   .lower-navbar-menu-options {
-    top: 70px;
+    top: 85px;
   }
 }
