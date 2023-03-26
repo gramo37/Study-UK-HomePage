@@ -1,5 +1,5 @@
 .blue_bg {
-  background: #1f1d47;
+  background: var(--dark-blue-color);
   padding-top: 75px;
   padding-bottom: 80px;
   border-bottom: inherit !important;
