@@ -3,6 +3,12 @@
   display: none !important;
 }
 
+#navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
 #navbar a {
   text-decoration: none;
   color: var(--white);
@@ -155,6 +161,8 @@
 }
 
 .lower-navbar-menu-container {
+  top: 0;
+  left: 0;
   color: var(--black);
   display: flex;
   justify-content: space-around;
@@ -178,6 +186,11 @@
 
 .lower-navbar-menu span {
   font-family: var(--primary-font);
+}
+
+.special-lower-navbar-menu {
+  font-family: var(--primary-font) !important;
+  color: var(--black) !important;
 }
 
 .lower-navbar-menu:hover .lower-navbar-menu-options {

@@ -86,6 +86,10 @@
   column-gap: 8px;
 }
 
+.special-lower-navbar-menu {
+  color: var(--white) !important;
+}
+
 .lower-navbar-menu-container {
   position: fixed;
   overflow: hidden;

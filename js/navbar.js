@@ -5,6 +5,10 @@ function toggleHamburger(x) {
     x.classList.toggle("toggle-hamburger");
 }
 
+function closeHamburger(e) {
+    toggleHamburger(e.parentNode.parentNode.parentNode.children[1].children[0])
+}
+
 function openOptions(e) {
     e.parentNode.children[1].classList.add("show-options")
 }
@@ -12,7 +16,6 @@ function openOptions(e) {
 function closeOptions(e) {
     e.parentNode.parentNode.classList.remove("show-options")
 }
-
 function expandSearchIcon(e) {
     e.parentNode.children[0].classList.toggle("expand-search-icon")
 }
