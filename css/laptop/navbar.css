@@ -3,9 +3,15 @@
   display: none !important;
 }
 
+#navbar a {
+  text-decoration: none;
+  color: var(--white);
+}
+
 /* Upper Navbar */
 #upper-navbar {
-  background-color: var(--primary-navbar-bg-color);
+  background-color: var(--primary-color);
+  /* background-color: var(--primary-navbar-bg-color); */
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -17,7 +23,7 @@
   justify-content: center;
   align-items: center;
   color: var(--white);
-  background-color: var(--primary-navbar-bg-color);
+  background-color: var(--primary-color);
   width: fit-content;
   /* border: 2px solid white; */
 }
@@ -35,7 +41,6 @@
 
 #navbar-logo div img {
   box-sizing: border-box;
-
 }
 
 #navbar-logo span {
@@ -59,7 +64,8 @@
 .upper-navbar-right-menu h1 {
   line-break: loose;
   white-space: nowrap;
-  color: var(--study-uk-text-color);
+  color: var(--white);
+  font-family: var(--primary-font);
 }
 
 .language-dropdown-container,
@@ -86,6 +92,10 @@
   filter: invert(1);
 }
 
+.language-dropdown-title {
+  font-family: var(--primary-font);
+}
+
 .language-list {
   position: absolute;
   background-color: var(--white);
@@ -93,6 +103,7 @@
   border-radius: 5px;
   z-index: 20;
   top: 46px;
+  font-family: var(--secondary-font);
 }
 
 .show-language-list {
@@ -127,10 +138,11 @@
   padding: 8px;
   outline: none;
   border: none;
+  font-family: var(--primary-font);
 }
 
 .search-icon {
-  background-color: var(--search-icon-bg-color);
+  background-color: var(--secondary-color);
   color: var(--white);
   padding: 10px 12px;
   margin-left: 7px;
@@ -139,11 +151,11 @@
 
 /* Lower Navbar */
 #lower-navbar {
-  background-color: var(--secondary-navbar-bg-color);
+  background-color: var(--white);
 }
 
 .lower-navbar-menu-container {
-  color: var(--lower-navbar-menu-text-color);
+  color: var(--black);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -164,6 +176,10 @@
   padding: 10px;
 }
 
+.lower-navbar-menu span {
+  font-family: var(--primary-font);
+}
+
 .lower-navbar-menu:hover .lower-navbar-menu-options {
   opacity: 1;
   pointer-events: all;
@@ -174,7 +190,7 @@
 }
 
 .lower-navbar-menu:last-child .diamondIcon {
-  transform: translate(150px, -20px) rotate(45deg);
+  transform: translate(100px, -20px) rotate(45deg);
 }
 
 .lower-navbar-menu:first-child .lower-navbar-menu-options {
@@ -182,11 +198,11 @@
 }
 
 .lower-navbar-menu:first-child .diamondIcon {
-  transform: translate(48px, -20px) rotate(45deg);
+  transform: translate(-83px, -20px) rotate(45deg);
 }
 
 .lower-navbar-menu-options {
-  background-color: var(--lower-navbar-menu-options-bg-color);
+  background-color: var(--secondary-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -198,7 +214,7 @@
   opacity: 0;
   pointer-events: none;
   width: fit-content;
-  border-bottom: 5px solid var(--light-blue-color);
+  border-bottom: 5px solid var(--secondary-light-color);
   z-index: 20;
 }
 
@@ -210,16 +226,17 @@
 }
 
 .lower-navbar-menu-options-container li {
-  color: var(--lower-navbar-menu-options-text-color);
+  color: var(--white);
   line-break: loose;
   white-space: nowrap;
   list-style: none;
   margin: 5px;
+  font-family: var(--secondary-font);
 }
 
 /* Classes used in navbar.js */
 .lower-navbar-menu-underline {
-  background-color: var(--red) !important;
+  background-color: var(--primary-color) !important;
   transition: 0.5s;
   height: 2px;
   width: 100%;
@@ -240,10 +257,10 @@
   scale: 1 !important;
   /* transform: translate(5vw, -20px) rotate(45deg); */
   transform: translate(0px, -20px) rotate(45deg);
-  background-color: var(--lower-navbar-menu-options-bg-color) !important;
+  background-color: var(--secondary-color) !important;
 }
 
-@media only screen and (max-width: 1175px) {
+@media only screen and (max-width: 1028px) {
   .lower-navbar-menu-options {
     top: 85px;
   }

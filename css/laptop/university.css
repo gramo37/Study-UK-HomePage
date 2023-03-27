@@ -1,18 +1,35 @@
+#university-container {
+  padding: 30px 10px;
+  background-color: var(--tertiary-color);
+}
+
 #university-container .item {
   width: 500px;
   height: 500px;
   margin: 0px 10px;
-  background-color: var(--light-cyan);
+  background-color: var(--tertiary-color);
 }
 
 #university-container h1 {
   text-align: center;
+  font-family: var(--primary-font);
 }
 
 .university-carasoul .item {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: var(--secondary-font);
+}
+
+.university-carasoul a {
+  text-decoration: none;
+  display: flex;
+  color: var(--white);
+}
+
+.university-carasoul a:hover {
+  text-decoration: none;
 }
 
 .university-carasoul .item span {

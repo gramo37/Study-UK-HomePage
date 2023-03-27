@@ -15,11 +15,11 @@
 /* Upper Navbar */
 #upper-navbar {
   padding: 10px 0px;
-  background-color: var(--tertiary-navbar-bg-color);
+  background-color: var(--primary-dark-color);
 }
 
 #navbar-logo {
-  background-color: var(--primary-navbar-bg-color);
+  background-color: var(--primary-color);
   margin-left: 10px;
 }
 
@@ -39,7 +39,7 @@
 }
 
 .language-dropdown-container, .search-icon {
-  background-color: var(--primary-navbar-bg-color);
+  background-color: var(--primary-color);
 }
 
 .language-dropdown-title {
@@ -78,7 +78,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--primary-navbar-bg-color);
+  background-color: var(--primary-color);
 }
 
 .lower-navbar-menu > span {
@@ -96,7 +96,7 @@
   z-index: 20;
   align-items: flex-start;
   justify-content: flex-start;
-  background-color: var(--dark-blue-color);
+  background-color: var(--secondary-color);
   color: var(--white);
   padding-left: 16px;
   padding-top: 30px;
@@ -172,7 +172,7 @@
 /* Hamburger Icon */
 .hamburger-icon {
   padding: 4px 10px;
-  background-color: var(--dark-blue-color);
+  background-color: var(--secondary-color);
   margin: 4px 0px;
   border-radius: 5px;
   margin-right: 10px;
@@ -186,7 +186,7 @@
 .hamburger-bar1, .hamburger-bar2, .hamburger-bar3 {
   width: 25px;
   height: 3px;
-  background-color: var(--hamburger-color);
+  background-color: var(--white);
   margin: 7px 0;
   transition: 0.4s;
 }
@@ -214,10 +214,6 @@
     font-size: 1.3rem;
     transform: translate(5px, 0px);
   }
-
-  /* .lower-navbar-menu-container {
-    top: 129px;
-  } */
 
   .expand-search-icon {
     width: calc(90vw - 41px) !important;

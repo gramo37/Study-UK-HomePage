@@ -1,40 +1,29 @@
-body{
-    margin: 0;
-    padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Raleway:wght@500&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.footer {
-    background-color: var(--dark-blue-color);
-    color: var(--white);
-    padding: 10px;
-}
-
-.footer a {
-    color: white;
+  text-decoration: none;
+  color: inherit;
 }
 
 :root {
- --primary-navbar-bg-color: red;
- --secondary-navbar-bg-color: white;
- --tertiary-navbar-bg-color: rgb(181 0 0);
+  --primary-color: red;
+  --primary-dark-color: rgb(181 0 0);
+  
+  --secondary-color: #04043f;
+  --secondary-light-color: #0545d6;
+  
+  --tertiary-color: #def5fa;
 
- --search-icon-bg-color: #04043f;
- --study-uk-text-color: white;
- --lower-navbar-menu-text-color: black;
- --lower-navbar-menu-options-bg-color: #04043f;
- --lower-navbar-menu-options-text-color: white;
- --hamburger-color: white;
+  --white: white;
+  --black: black;
+  --gray: rgb(219, 219, 219);
+  --dark-gray: #626262;
 
- --dark-blue-color: #04043f;
- --light-blue-color: #0545d6;
- --light-cyan: #def5fa;
- --white: white;
- --black: black;
- --red: red;
- --gray: rgb(219, 219, 219);
+  --primary-font: 'Oswald', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
 }

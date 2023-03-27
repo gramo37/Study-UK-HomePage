@@ -1,5 +1,5 @@
 .blue_bg {
-  background: var(--dark-blue-color);
+  background: var(--secondary-color);
   padding-top: 75px;
   padding-bottom: 80px;
   border-bottom: inherit !important;
@@ -21,17 +21,18 @@
   width: 100%;
   height: 74px;
   background: #fff;
-  color: #626262;
+  color: var(--dark-gray);
   font-size: 17px;
   font-weight: normal;
   border: inherit;
+  font-family: var(--secondary-font);
 }
 
 .main_form .textarea {
   margin-bottom: 33px;
   width: 100%;
-  background: #fff;
-  color: #626262;
+  background: var(--white);
+  color: var(--dark-gray);
   font-size: 17px;
   font-weight: normal;
   padding: 10px 10px 10px 30px;
@@ -42,7 +43,7 @@
 .main_form .send_btn {
   font-size: 17px;
   transition: ease-in all 0.5s;
-  background-color: #db3620;
+  background-color: var(--primary-color);
   text-transform: uppercase;
   color: var(--white);
   max-width: 236px;
@@ -59,11 +60,11 @@
 .main_form .send_btn:hover {
   background-color: var(--white);
   transition: ease-in all 0.5s;
-  color: var(--red);
+  color: var(--primary-color);
 }
 
 #request *::placeholder {
-  color: #626262;
+  color: var(--dark-gray);
   opacity: 1;
 }
 
@@ -77,6 +78,8 @@
 
 .titlepage h2 {
   color: var(--white);
+  font-family: var(--primary-font);
+  font-size: 2.5rem;
 }
 
 .testimonial_box p {
@@ -87,6 +90,7 @@
   line-height: 36px;
   display: inline-block;
   font-weight: 400;
+  font-family: var(--secondary-font);
 }
 
 .testimonial_Carousel .carousel-caption {
@@ -112,15 +116,17 @@
   text-transform: uppercase;
   font-style: italic;
   padding-left: 25px;
+  font-family: var(--primary-font);
 }
 
 .cust {
-  color: var(--red);
+  color: var(--primary-color);
   text-transform: initial;
   font-size: 14px;
   font-weight: bold;
   font-style: italic;
   line-height: 10px;
+  font-family: var(--secondary-font);
 }
 
 .testimonial_pro figure {
@@ -130,7 +136,7 @@
 .testimonial_pro figure img {
   max-width: 100%;
   text-align: center;
-  box-shadow: -11px -15px 0px 0px var(--red);
+  box-shadow: -11px -15px 0px 0px var(--primary-color);
 }
 
 #myCarousel .carousel-indicators {
@@ -180,9 +186,6 @@
   .contact {
     border: none;
   }
-  .titlepage h2 {
-    font-size: 44px;
-  }
   ul.conta li {
     font-size: 16px;
   }
@@ -199,10 +202,6 @@
   }
   .testimonial .titlepage {
     text-align: center;
-  }
-  .titlepage h2 {
-    font-size: 34px;
-    line-height: 35px;
   }
 }
 
@@ -232,10 +231,6 @@
     width: 55px;
     height: 55px;
     top: 68%;
-  }
-  .titlepage h2 {
-    font-size: 27px;
-    line-height: 30px;
   }
   .contact {
     border: inherit;
