@@ -3,6 +3,10 @@
   font-family: var(--primary-font);
 }
 
+.info-container {
+  background-color: var(--tertiary-color);
+}
+
 .info-content-container {
   display: flex;
   justify-content: center;
@@ -41,11 +45,12 @@
 .info-content > ul {
   font-family: var(--secondary-font);
   padding: 0px;
+  font-style: italic;
 }
 
 .info-content > ul li {
   list-style: none;
-  margin: 10px;
+  margin: 15px 0px;
 }
 
 @media only screen and (max-width: 900px) {
@@ -58,7 +63,7 @@
   }
 
   .info-content > ul {
-    margin-left: 0px;
+    margin: 0px !important;
   }
 
   .info-content {
