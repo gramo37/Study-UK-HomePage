@@ -1,12 +1,11 @@
-function toggleHamburger(x) {
+function toggleHamburger() {
     let lowerNavbarMenuContainer = document.querySelector(".lower-navbar-menu-container");
     lowerNavbarMenuContainer.classList.toggle("slide-right")
     lowerNavbarMenuContainer.classList.toggle("slide-left")
+    
+    const lowerNavbar = document.getElementById("lower-navbar")
+    const x = lowerNavbar.children[1].children[0]
     x.classList.toggle("toggle-hamburger");
-}
-
-function closeHamburger(e) {
-    toggleHamburger(e.parentNode.parentNode.parentNode.children[1].children[0])
 }
 
 function openOptions(e) {
