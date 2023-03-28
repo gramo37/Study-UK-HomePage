@@ -13,6 +13,8 @@
 #university-container h1 {
   text-align: center;
   font-family: var(--primary-font);
+  color: var(--secondary-light-color);
+  font-size: 3.5rem;
 }
 
 .university-carasoul .item {
